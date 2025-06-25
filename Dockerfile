@@ -3,14 +3,14 @@ FROM python:3.10-slim
 ENV PYTHONDONTWRITEBYTECODE 1
 ENV PYTHONUNBUFFERED 1
 
-WORKDIR /app
-
-# ✅ Install system dependencies
+# Install required system packages
 RUN apt-get update && apt-get install -y \
-    gcc \
-    g++ \
+    build-essential \
+    libpq-dev \
     libkrb5-dev \
-    && rm -rf /var/lib/apt/lists/*
+    && apt-get clean
+
+WORKDIR /app
 
 COPY requirements.txt .
 RUN pip install --upgrade pip
