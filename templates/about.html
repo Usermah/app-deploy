@@ -1,0 +1,47 @@
+{% extends 'base.html'%}
+{% load static %}
+
+{% block content %}
+<div class="container mt-5">
+  <div class="row row-cols-1 row-cols-md-2 g-4">
+    
+    <!-- Usama's Block -->
+    <div class="col" data-aos="zoom-in" data-aos-duration="800">
+      <div class="card h-100 shadow-sm border-0">
+        <img src="{% static 'usama.jpg' %}" class="card-img-top rounded-top" alt="Usama's photo" style="height: 300px; object-fit: cover;">
+        <div class="card-body">
+          <h5 class="card-title">Usama Ibrahim</h5>
+          <p class="card-text">
+            I'm a <b>400-level Computer Science student</b> with a strong passion for full-stack development.<br>
+            Skilled in Django, Python, HTML, CSS, and JavaScript. I'm building modern and responsive web apps.
+          </p>
+          <div class="d-flex gap-2 flex-wrap mt-3">
+            <a href="mailto:usamaibrahim737@gmail.com" class="btn btn-outline-success btn-sm">Email</a>
+            <a href="https://github.com/Usermah" class="btn btn-outline-dark btn-sm" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/" class="btn btn-outline-primary btn-sm" target="_blank">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+     <div class="col" data-aos="zoom-in" data-aos-duration="800">
+      <div class="card h-100 shadow-sm border-0">
+        <img src="{% static 'zayyan.jpg' %}" class="card-img-top rounded-top" alt="Zayyan's photo" style="height: 300px; object-fit: cover;">
+        <div class="card-body">
+          <h5 class="card-title">Zayyan Abdullahi</h5>
+          <p class="card-text">
+            I'm a <b>400-level Computer Science student</b> with a strong passion for full-stack development.<br>
+            Skilled in Django, Python, HTML, CSS, and JavaScript. I'm building modern and responsive web apps.
+          </p>
+          <div class="d-flex gap-2 flex-wrap mt-3">
+            <a href="mailto:zayyan@example.com" class="btn btn-outline-success btn-sm">Email</a>
+            <a href="https://github.com/Zayyan" class="btn btn-outline-dark btn-sm" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/zayyan" class="btn btn-outline-primary btn-sm" target="_blank">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

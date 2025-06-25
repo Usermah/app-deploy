@@ -1,0 +1,24 @@
+{% extends 'base.html'%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>{% block content %}
+
+        <h3>Data processing...</h3>
+        {% if name %}
+       Hello  {{ name }}<br />
+       Your age is  {{age}} 
+
+{% else %}
+
+<h4>Name not specify</h4>
+
+{% endif%}
+
+{% endblock %}
+</body>
+</html>

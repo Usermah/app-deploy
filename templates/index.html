@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="container mt-5 text-center">
+  <h1 class="mb-4" data-aos="fade-down" data-aos-duration="1000">Welcome to Python Django Course</h1>
+  <p data-aos="fade-up" data-aos-delay="300">
+    This is a tutorial on Django templates. Explore how blocks, inheritance, and static files work.
+  </p>
+
+  <!-- Team Cards with Animation -->
+  <div class="row row-cols-1 row-cols-md-2 g-4 mt-5">
+
+  <!-- Python Card -->
+  <div class="col" data-aos="zoom-in" data-aos-delay="200">
+    <div class="card h-100 shadow">
+      <img src="{% static 'logo2.jpeg' %}" class="card-img-top" alt="Python Logo" style="height: 300px; object-fit: cover;">
+      <div class="card-body">
+        <h5 class="card-title">Python</h5>
+        <p class="card-text">
+          Python is a high-level, 
+          versatile programming language 
+          known for its simple syntax 
+          and readability.
+           It’s widely used in web 
+           development, data science, 
+           machine learning, automation, and more.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Java Card -->
+  <div class="col" data-aos="zoom-in" data-aos-delay="400">
+    <div class="card h-100 shadow">
+      <img src="{% static 'logos.png' %}" class="card-img-top" alt="Java Logo" style="height: 300px; object-fit: cover;">
+      <div class="card-body">
+        <h5 class="card-title">Java</h5>
+        <p class="card-text">
+          Java is a powerful, 
+          object-oriented programming 
+          language commonly used for building 
+          cross-platform applications, 
+          especially enterprise-scale 
+          software, Android apps, and web systems.
+        </p>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+{% endblock %}
